@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+
+</head>
+<style>
+    /* body {
+        background-color: #eee;
+    }
+
+    .slick-track {
+        display: flex;
+        gap: 50px;
+    }
+
+    .slider-cont {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .slider-cont .slick-child {
+        width: 100%;
+        max-width: 300px;
+        background-color: red;
+    }
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-next {
+        right: 0;
+    } */
+</style>
+
+<body>
+    <section class="company-section">
+        <div class="companies">
+            <div class="company-img psycho"><img src="./assets/img/psychology.png" alt=""></div>
+            <div class="company-img wellmune"><img src="./assets/img/wellmune.png" alt=""></div>
+            <div class="company-img kerry"><img src="./assets/img/kerry.png" alt=""></div>
+            <div class="company-img albion"><img src="./assets/img/albion.png" alt=""></div>
+            <div class="company-img traacs"><img src="./assets/img/traacs.png" alt=""></div>
+        </div>
+    </section>
+    <!-- <div id="dot-container">
+
+    </div>
+
+    <div class="slick-btns">
+        <button id="slick-prev">Prev</button>
+        <button id="slick-next">Next</button>
+    </div> -->
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.companies').slick({
+            slidesToShow: 3,
+            infinite: true,
+            slidesToScroll: 1,
+            dots: true,
+            centerMode: true,
+            centerPadding: '50px',
+            focusOnSelect: true,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            prevArrow: '#slick-prev',
+            nextArrow: '#slick-next',
+            // arrows: true,
+            appendDots: "#dot-container",
+            draggable: true,
+            initialSlide: 2,
+            variableWidth: true,
+        });
+    </script>
+</body>
+
+</html>

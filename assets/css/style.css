@@ -507,48 +507,60 @@ Top Page
 }
 
 .companies {
+    width: 100%;
     max-width: 1079px;
     padding: 0 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin: 0 auto;
+    gap: 20px;
 }
 
-.psycho {
-    background: url(../img/psychology.png) no-repeat;
-    background-size: contain;
+.companies .company{
+    width: 100%;
+    max-width: 300px;
+    background-color: red;
+}
+
+.companies .company-img img{
+    width: 100%;
+}
+
+.slick-track{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+/* .slick-track .slick-slide{
+    width: 100%;
+    max-width: 300px;
+} */
+/* .psycho {
     width: 150px;
     height: 39px;
 }
 
 .wellmune {
-    background: url(../img/wellmune.png) no-repeat;
-    background-size: contain;
     width: 134px;
     height: 25px;
 }
 
 .kerry {
-    background: url(../img/kerry.png) no-repeat;
-    background-size: contain;
     width: 120px;
     height: 120px;
+    margin-top: 25px;
 }
 
 .albion {
-    background: url(../img/albion.png) no-repeat;
-    background-size: contain;
     width: 140px;
     height: 35px;
 }
 
 .traacs {
-    background: url(../img/traacs.png) no-repeat;
-    background-size: contain;
     width: 146px;
     height: 80px;
-}
+    margin-top: 15px;
+} */
 
 /* 8th start */
 

@@ -13,4 +13,26 @@ $(function () {
       $("body").removeClass("overflow-hidden");
     }
   });
+
+  // $(".companies").slick({
+  //   slidesToShow: 3,
+  //   infinite: true,
+  //   slidesToScroll: 1,
+  //   centerMode: true,
+  //   autoplay: false,
+  //   autoplaySpeed: 2000,
+  // });
+
+   $('.companies').slick({
+            slidesToShow: 3,
+            infinite: true,
+            slidesToScroll: 1,
+            centerMode: true,
+            autoplay:false,
+            autoplaySpeed:2000,
+            dots: true,
+            // draggable: true,
+            // initialSlide: 2,
+            variableWidth: true,
+        });
 });
