@@ -47,10 +47,11 @@ Top Page
 .menu-ul {
     /* position: fixed; */
     display: flex;
+    justify-content: space-between;
     gap: 34px;
     font-family: 'Open Sans';
     font-size: 18px;
-    font-weight: 400px;
+    font-weight: 400;
     align-items: center;
 }
 
@@ -59,6 +60,7 @@ Top Page
     gap: 25px;
     justify-content: center;
     align-items: center;
+
 }
 
 .h-icon {
@@ -83,6 +85,7 @@ Top Page
 
 .mv-container {
     background-color: #DDC0AE;
+
 }
 
 .mv-content {
@@ -109,6 +112,7 @@ Top Page
 }
 
 .mv-content-p {
+    max-width: 580px;
     font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 400;
@@ -119,7 +123,7 @@ Top Page
 
 .buynow-btn {
     width: 250px;
-    height: 65px;
+    padding: 22px;
     border-radius: 50px;
     font-family: 'Roboto';
     font-size: 20px;
@@ -159,9 +163,7 @@ Top Page
     align-items: center;
 }
 
-.inner-num-content {
-    max-width: 162px;
-}
+
 
 .num-content {
     width: 1018px;
@@ -193,7 +195,7 @@ Top Page
 .dangila-container {
     max-width: 1036px;
     padding: 20px;
-    margin: 80px auto;
+    margin: 0 auto;
 }
 
 .upper-content {
@@ -224,7 +226,7 @@ Top Page
 }
 
 .dangila {
-    max-width: 232px;
+    /* max-width: 232px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,11 +272,12 @@ Top Page
     max-width: 1280px;
     width: 100%;
     padding: 0 30px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 80px;
+    gap: 20px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-us {
@@ -310,7 +313,7 @@ Top Page
     font-weight: 400;
     color: #ffff;
     width: 190px;
-    height: 58px;
+    padding: 15px;
     border: 1px solid #707070;
     display: flex;
     align-items: center;
@@ -328,12 +331,14 @@ Top Page
 }
 
 .about-us-img {
-    max-width: 631px;
-    height: 579px;
+    /* max-width: 631px;
+    height: 579px; */
+    width: fit-content;
+
 
 }
 
-.red-dot-img {
+/* .red-dot-img {
     background: url(../img/red_dot.png) no-repeat;
     background-size: contain;
     width: 105px;
@@ -342,18 +347,17 @@ Top Page
     z-index: 1000;
     right: 27px;
     top: 0;
+} */
 
-}
-
-.about-img {
-    background: url(../img/about_img.png) no-repeat;
+/* .about-img {
+    background: url(../img/reddot_img.png) no-repeat;
     background-size: contain;
     width: 581px;
     height: 529px;
     position: absolute;
     bottom: 0;
     right: 75px;
-}
+} */
 
 /* 5th start */
 .product-section {
@@ -366,7 +370,6 @@ Top Page
     max-width: 1007px;
     padding: 0 20px;
     margin: 0 auto;
-    height: 360px;
 }
 
 .our-product-h2 {
@@ -433,7 +436,7 @@ Top Page
     font-size: 55px;
     font-weight: 500;
     color: #A1613B;
-    padding: 66px 0 38px 0;
+    margin: 66px 0 38px 0;
     text-align: center;
 }
 
@@ -471,7 +474,6 @@ Top Page
     color: #8C8C8C;
     position: relative;
     text-align: center;
-    height: 94px;
     padding: 25px 0 25px 55px;
 }
 
@@ -555,19 +557,19 @@ Top Page
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* display: flex;
+    justify-content: space-between; */
     margin: 0 auto;
 
 }
 
-.subscribe-img {
+/* .subscribe-img {
     background: url(../img/subscribe_img.png) no-repeat;
     background-size: contain;
     max-width: 589px;
-    height: 491px;
-}
+} */
 
 .subscribe-content {
-    height: 206px;
     margin: 144px 0;
 }
 
@@ -588,13 +590,14 @@ Top Page
 }
 
 .email-btn {
-    width: 640px;
+    max-width: 640px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 7px 10px;
     border: 1.5px solid #F5F5F5;
     border-radius: 50px;
+    box-shadow: 1px 5px 10px #dccdcd;
 }
 
 .enter-mail {
@@ -613,17 +616,21 @@ Top Page
     align-items: center;
     justify-content: center;
     color: #ffff;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /* footer start */
 .footer-section {
-background: linear-gradient(to bottom,#fefefe 0%, #FFF2EA 100%, #FFF2EA 100%);
+    background: linear-gradient(to bottom, #fefefe 0%, #FFF2EA 100%, #FFF2EA 100%);
 
 }
 
 .footer {
     max-width: 1210px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
     padding: 220px 20px 70px 20px;
@@ -633,9 +640,11 @@ background: linear-gradient(to bottom,#fefefe 0%, #FFF2EA 100%, #FFF2EA 100%);
     color: #4C4C4C;
     gap: 10px;
 }
-.first-content-p{
-    max-width: 260px;
+
+.footer-content {
+    width: 260px;
 }
+
 .first-content-icon {
     display: flex;
     gap: 10px;
@@ -736,53 +745,175 @@ background: linear-gradient(to bottom,#fefefe 0%, #FFF2EA 100%, #FFF2EA 100%);
 }
 
 @media screen and (max-width: 1420px) {
-    /* .mv-content-img{
-        width: 50%;
+    .mv-content-img {
+        height: 650px;
+    }
+}
 
-    } */
+@media screen and (max-width: 1380px) {
+    .mv-content {
+        max-width: 680px;
+        margin-left: 55px;
+        z-index: 100;
+        position: absolute;
+        margin-top: 130px;
+    }
+
+    .mv-content-h1 {
+        font-size: 140px;
+        margin-bottom: 20px;
+    }
+
+    .mv-content-span {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .mv-content-p {
+        max-width: 500px;
+        font-size: 14px;
+        margin: 8px 0 44px 20px;
+    }
+
+    .buynow-btn {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .mv-content-img {
+        height: 600px;
+    }
+
+    .mv-content {
+        max-width: 600px;
+        margin-left: 55px;
+        margin-top: 110px;
+    }
+
+    .mv-content-h1 {
+        font-size: 130px;
+        margin-bottom: 20px;
+    }
+
+    .mv-content-span {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .mv-content-p {
+        max-width: 450px;
+        font-size: 14px;
+        margin-left: 20px;
+        margin: 8px 0 30px 20px
+    }
+
+    .buynow-btn {
+        margin-left: 20px;
+        width: 230px;
+        font-size: 18px;
+    }
 }
 
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1190px) {
+    .mv-content-p {
+        max-width: 400px;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
     .subscribe-h2 {
         font-size: 36px;
     }
 
     .email-btn {
-        width: 500px;
-    }
-}
-
-@media screen and (max-width: 970px) {
-    .subscribe-h2 {
-        font-size: 30px;
+        max-width: 500px;
     }
 
-    .email-btn {
-        width: 350px;
-    }
-
-    .subscribe-p {
+    .about-us-p {
         font-size: 16px;
-        margin: 10px 0 13px 0;
-    }
-
-    .enter-mail {
-        font-size: 14px;
-    }
-
-    .get-btn {
-        width: 120px;
-        height: 40px;
-
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
+    .mv-content-h1 {
+        font-size: 110px;
+    }
+
+    .mv-content-img {
+        width: 75%;
+        margin-left: auto;
+    }
+
+    .mv-content {
+        margin-left: -20%;
+    }
+
+    .mv-content-p {
+        margin-left: 8px;
+    }
+
+    .mv-content-span {
+        margin-left: 8px;
+    }
+
+    .buynow-btn {
+        margin-left: 20px;
+        width: 210px;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .footer {
+        padding: 120px 40px 70px 40px;
+    }
+
+    .red-dot-img {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        right: 48px;
+        top: 21px;
+    }
+
+    .about-container {
+        margin: 40px 0 0 0;
+    }
+
+    .about-us {
+        max-width: 400px;
+        margin: 60px 0 65px 0;
+        z-index: 1000;
+    }
+
+    .about-us-h2 {
+        font-size: 50px;
+    }
+
+    .about-btn {
+        font-size: 16px;
+        font-weight: 400;
+        width: 150px;
+        height: 58px;
+    }
+
+    .about-us-p {
+        margin: 20px 0 15px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .header {
         position: fixed;
         z-index: 1999;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 29px;
+        top: 0;
     }
 
     .hamburger {
@@ -816,6 +947,7 @@ background: linear-gradient(to bottom,#fefefe 0%, #FFF2EA 100%, #FFF2EA 100%);
     .menu-ul {
         display: flex;
         flex-direction: column;
+        justify-content: start;
         gap: 10px;
         width: 100%;
         padding: 10px;
@@ -852,8 +984,8 @@ background: linear-gradient(to bottom,#fefefe 0%, #FFF2EA 100%, #FFF2EA 100%);
         display: flex;
     }
 
-    .mv-bg {
-        position: relative;
+    .mv-container {
+        margin-top: 90px;
     }
 
     .hamburger.active .bar:nth-child(1) {
@@ -867,6 +999,327 @@ background: linear-gradient(to bottom,#fefefe 0%, #FFF2EA 100%, #FFF2EA 100%);
     .hamburger.active .bar:nth-child(3) {
         transform: rotate(-45deg) translateY(-11px);
     }
+
+    .footer {
+        padding: 60px 40px 70px 40px;
+    }
 }
 
-@media screen and (max-width: 768px) {}
+
+
+@media screen and (max-width: 970px) {
+
+    .subscribe-h2 {
+        font-size: 30px;
+    }
+
+    .email-btn {
+        max-width: 450px;
+    }
+
+    .subscribe-p {
+        font-size: 16px;
+        margin: 10px 0 13px 0;
+    }
+
+    .enter-mail {
+        font-size: 14px;
+    }
+
+    .get-btn {
+        width: 120px;
+        height: 40px;
+    }
+
+    .footer {
+        padding: 0px 40px 70px 40px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .about-container {
+        margin: 0;
+    }
+
+    .red-dot-img {
+        right: 20px;
+        top: 63px;
+    }
+
+    .about-us {
+        padding-top: 30px;
+    }
+
+    .about-us {
+        max-width: 350px;
+        margin: 60px 0 65px 0;
+        z-index: 1000;
+    }
+
+    .about-us-h2 {
+        font-size: 50px;
+    }
+
+    .about-btn {
+        font-size: 14px;
+        font-weight: 400;
+        width: 130px;
+        padding: 0px;
+    }
+
+    .about-us-p {
+        font-size: 14px;
+        margin: 5px 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        position: static;
+    }
+
+    .header-h2 {
+        font-size: 20px;
+    }
+
+    .menu-a {
+        font-size: 16px;
+    }
+
+    .mv-container {
+        margin-top: 0;
+    }
+
+    .mv-content-img {
+        background: none;
+        margin-left: 0;
+    }
+
+    .mv-content {
+        margin-left: 0;
+        padding: 30px;
+        margin-top: 50px;
+
+    }
+
+    .mv-content-h1 {
+        font-size: 90px;
+    }
+
+    .num-content-span {
+        font-size: 25px;
+    }
+
+    .num-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 39px 20px 40px 20px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .inner-num-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .num-content-p {
+        font-size: 16px;
+    }
+
+    .upper-content {
+        margin-top: 28px;
+    }
+
+    .dangila-h2 {
+        font-size: 40px;
+    }
+
+    .dangila-upper-p {
+        font-size: 16px;
+    }
+
+    .dangila-img-label {
+        font-size: 20px;
+    }
+
+    .dangila-img-p {
+        font-size: 14px;
+    }
+
+    .lower-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .about-container {
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+
+    .about-us {
+        max-width: 768px;
+        margin: 0px 0 0px 0;
+        gap: 0px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-us-h2 {
+        font-size: 40px;
+    }
+
+    .about-us-p {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .our-product-icon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 400px;
+        margin: 0 auto;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .our-product-h2 {
+        font-size: 34px;
+    }
+
+    .product-label {
+        font-size: 18px;
+    }
+
+    .test-container {
+        max-width: 863px;
+        padding: 0 20px;
+        margin: 34px auto 69px auto;
+    }
+
+    .test-h2 {
+        font-size: 40px;
+        margin: 26px 0 10px 0;
+    }
+
+    .test-absolute-container {
+        padding: 20px;
+    }
+
+    .test-absolute-container::before {
+        width: 62px;
+        height: 102px;
+        position: absolute;
+        top: -70px;
+        left: 10px;
+    }
+
+    .test-p {
+        padding: 25px 0 25px 27px;
+    }
+
+    .test-p::before {
+        width: 33px;
+        height: 35px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .test-p::after {
+        width: 33px;
+        height: 35px;
+        right: 0;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto 40px auto;
+    }
+
+    .subscribe-p {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .subscribe-h2 {
+        text-align: center;
+    }
+
+    .subscribe-content {
+        margin: 0px 0 50px 0;
+    }
+
+    .email-btn {
+        max-width: 768px;
+    }
+
+    .get-btn {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .mv-content-h1 {
+        font-size: 60px;
+    }
+
+    .mv-content-span {
+        font-size: 16px;
+    }
+
+    .test-absolute-container {
+        padding: 5px;
+
+    }
+
+    .test-p {
+        padding: 5px 0 5px 33px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .dangila-h2 {
+        font-size: 30px;
+    }
+
+    .subscribe-h2 {
+        font-size: 20px;
+    }
+
+    .get-btn {
+        font-size: 14px;
+    }
+}
