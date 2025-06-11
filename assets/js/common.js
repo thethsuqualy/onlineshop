@@ -1,20 +1,20 @@
 // Your JavaScript code goes here
 document.addEventListener("DOMContentLoaded", () => {
-  const topBtn = document.querySelector('.top-btn');
+  const topBtn = document.querySelector(".top-btn");
 
-        // Show or hide the button when scrolling
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 200) {
-                topBtn.classList.remove('nottop');
-            } else {
-                topBtn.classList.add('nottop');
-            }
-        });
+  // Show or hide the button when scrolling
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      topBtn.classList.remove("nottop");
+    } else {
+      topBtn.classList.add("nottop");
+    }
+  });
 
-        // Scroll to top when the button is clicked
-        topBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+  // Scroll to top when the button is clicked
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
 
 // Your jQuery code goes here
@@ -30,26 +30,71 @@ $(function () {
     }
   });
 
+  // $(".test-wrapper").slick({
+  //   slidesToShow: 1,
+  //   infinite: true,
+  //   slidesToScroll: 1,
+  //   centerMode: false,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  // });
+
+  //  $('.companies').slick({
+  //           slidesToShow: 4,
+  //           infinite: true,
+  //           slidesToScroll: 1,
+  //           centerMode: true,
+  //           // centerpadding:"50px",
+  //           autoplay:true,
+  //           autoplaySpeed:2000,
+  //           // dots: true,
+  //           draggable: true,
+  //           // initialSlide: 2
+  //       });
   $(".test-wrapper").slick({
-    slidesToShow: 1,
     infinite: true,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: true,
+    arrows: false,
+    dots: false,
     autoplay: true,
     autoplaySpeed: 2000,
+    centerMode:true,    
+     responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                centerMode:false,
+            }
+        },
+        
+    ]
   });
 
-   $('.companies').slick({
-            slidesToShow: 4,
-            infinite: true,
-            slidesToScroll: 1,
-            centerMode: false,
-            autoplay:true,
-            autoplaySpeed:2000,
-            // dots: true,
-            draggable: true,
-            // initialSlide: 2,
-            
-        });
+$('.companies').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: false,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
+});
+
   
 });

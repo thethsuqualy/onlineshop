@@ -54,13 +54,17 @@ Top Page
     font-weight: 400;
     align-items: center;
 }
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
 
 .header-icon {
     display: flex;
     gap: 25px;
     justify-content: center;
     align-items: center;
-
 }
 
 .h-icon {
@@ -181,6 +185,7 @@ Top Page
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #A1613B;
 }
 
 .num-content-p {
@@ -188,6 +193,7 @@ Top Page
     font-size: 20px;
     font-weight: 400;
     text-align: center;
+    color: #181818;
 }
 
 /* third start */
@@ -331,8 +337,6 @@ Top Page
 }
 
 .about-us-img {
-    /* max-width: 631px;
-    height: 579px; */
     width: fit-content;
 }
 
@@ -403,14 +407,9 @@ Top Page
 /* 6th start */
 
 .test-container {
-    overflow: hidden;
     margin: 59px auto 80px auto;
-    background-color: rgb(168, 150, 150);
-}
-
-.test-wrapper .slick-track {
-    display: flex;
-    gap: 30px;
+    position: relative;
+    overflow: hidden;
 }
 
 .test-h2 {
@@ -418,28 +417,41 @@ Top Page
     font-size: 55px;
     font-weight: 500;
     color: #A1613B;
-    margin: 66px 0 133px 0;
+    margin: 66px 0 95px 0;
     text-align: center;
 }
 
+/* Slick wrapper */
 .test-wrapper {
     max-width: 1440px;
-    margin-bottom: 70px;
+    margin: 0 auto;
+    position: relative;
 }
 
+/* Ensure slick works in horizontal row */
+.test-wrapper .slick-track {
+    display: flex !important;
+}
+
+/* Each testimonial slide */
 .test-absolute-container {
+    background-color: #fff;
+    width: 100%;
     max-width: 823px;
     height: 200px;
     border-radius: 30px 10px 30px 10px;
     box-shadow: 0px 15px 30px #707070;
     position: relative;
     padding: 30px 80px 35px 100px;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 38px 30px 70px 30px;
+
 }
 
+
+/* Floating woman image */
 .test-absolute-container::before {
     content: '';
     background: url(../img/blue-women.png) no-repeat;
@@ -452,6 +464,7 @@ Top Page
     left: 35px;
 }
 
+/* Testimonial text */
 .test-p {
     font-family: 'Open Sans';
     font-size: 16px;
@@ -464,64 +477,80 @@ Top Page
 
 .test-p::before {
     content: '';
-    display: block;
     position: absolute;
     background: url(../img/open.png) no-repeat;
     background-size: contain;
     width: 53px;
     height: 35px;
-    top: 0px;
+    top: 0;
     left: 10px;
 }
 
 .test-p::after {
     content: '';
-    display: block;
     position: absolute;
     background: url(../img/close.png) no-repeat;
     background-size: contain;
     width: 53px;
     height: 35px;
     right: 0;
+    bottom: 0;
+}
+
+/* Slick dots (optional) */
+.test-wrapper .slick-dots {
+    bottom: -30px;
+}
+
+.test-wrapper .slick-dots li button:before {
+    color: #A1613B;
+    font-size: 12px;
 }
 
 /* 7th start */
 .company-section {
+    background-color: #FAFAFA;
+    overflow: hidden;
     margin-bottom: 75px;
-    background-color: #7c7575;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .companies {
-    width: 100%;
     max-width: 1079px;
-    padding: 0 20px;
+    padding: 10px 20px;
     margin: 0 auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
-.companies .company {
-    display: flex;
+.companies .slick-track {
+    display: flex !important;
+    align-items: center;
+    gap: 20px;
+    height: 131px;
+}
+
+.company {
+    display: flex !important;
     align-items: center;
     justify-content: center;
-    height: 39px;
-    padding: 65px 0;
 }
 
-/* .slick-track {
-    display: flex;
-    gap: 30px;
-} */
-.company-section .slick-track {
-    display: flex;
-    gap: 30px;
+.company img {
+    object-fit: contain;
+    display: block;
+    width: 120px;
+    height: 35px;
 }
 
-.companies.slick-slider {
-    margin: 0;
+.company img.kerry {
+    width: 120px;
+    height: 120px;
 }
+
+.company img.traacs {
+    width: 146px;
+    height: 80px;
+}
+
 
 /* 8th start */
 
@@ -586,18 +615,20 @@ Top Page
 }
 
 /* footer start */
- 
- .top-btn{
+
+.top-btn {
     width: 97px;
     height: 97px;
     position: fixed;
     right: 30px;
     bottom: 20px;
 
- }
- .top-btn.nottop {
-  display: none;
 }
+
+.top-btn.nottop {
+    display: none;
+}
+
 .footer-section {
     background: linear-gradient(to bottom, #fefefe 0%, #FFF2EA 100%, #FFF2EA 100%);
 
@@ -883,7 +914,7 @@ Top Page
 
 @media screen and (max-width: 1000px) {
     .header {
-        position:static;
+        position: static;
         z-index: 1999;
         width: 100%;
         display: flex;
@@ -891,6 +922,12 @@ Top Page
         padding: 30px 29px;
         top: 0;
     }
+    /* .header-icon{
+        position:absolute;
+        left: 30px;
+        top: 350px;
+    } */
+    
 
     .hamburger {
         width: 30px;
@@ -1199,12 +1236,12 @@ Top Page
     .test-container {
         max-width: 863px;
         padding: 0 20px;
-        margin: 34px auto 69px auto;
+        margin: 30px auto 40px auto;
     }
 
     .test-h2 {
         font-size: 40px;
-        margin: 26px 0 103px 0;
+        margin: 0px 0 47px 0;
     }
 
     .test-absolute-container {
@@ -1226,7 +1263,7 @@ Top Page
     .test-p::before {
         width: 33px;
         height: 35px;
-        top: 0px;
+        top: 6px;
         left: 0px;
     }
 
@@ -1234,6 +1271,11 @@ Top Page
         width: 33px;
         height: 35px;
         right: 0;
+        bottom: -10px;
+    }
+
+    .companies .slick-track {
+        height: 100px;
     }
 
     .subscribe {
@@ -1264,6 +1306,38 @@ Top Page
         font-size: 16px;
     }
 
+    .top-btn {
+        width: 57px;
+        height: 57px;
+        position: fixed;
+        right: 30px;
+        bottom: 20px;
+
+    }
+
+}
+
+@media screen and (max-width: 590px) {
+    .test-p::before {
+        width: 25px;
+        height: 27px;
+        top: -8px;
+        left: 0px;
+    }
+
+    .test-p::after {
+        width: 25px;
+        height: 27px;
+        right: 0px;
+        bottom: -23px;
+    }
+    .test-absolute-container{
+        padding: 10px;
+    }
+    .test-p{
+        padding:10px 0 10px 20px;
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 460px) {
@@ -1281,8 +1355,22 @@ Top Page
     }
 
     .test-p {
-        padding: 5px 0 5px 33px;
+        padding: 5px 0 5px 0px;
         font-size: 14px;
+    }
+
+    .test-p::before {
+        width: 23px;
+        height: 25px;
+        top: -8px;
+        left: 0px;
+    }
+
+    .test-p::after {
+        width: 23px;
+        height: 25px;
+        right: 0px;
+        bottom: -10px;
     }
 }
 
