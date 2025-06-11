@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll to Top</title>
+    <link rel="stylesheet" href="../slick/slick.css">
+    <link rel="stylesheet" href="../slick/slick-theme.css">
+</head>
+<style>
+    .psychology-img {
+        max-width: 150px;
+        padding: 20px;
+    }
+
+    .wellmune-img {
+        max-width: 135px;
+        padding: 20px;
+    }
+
+    .kerry-img {
+        max-width: 120px;
+        padding: 20px;
+    }
+
+    .albion-img {
+        max-width: 140px;
+        padding: 20px;
+    }
+
+    .traacs-img {
+        max-width: 147px;
+        padding: 20px;
+    }
+
+    .advertisement {
+        display: flex;
+        max-width: 1080px;
+        padding: 6px 20px 5px 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+        margin: 0 auto;
+    }
+
+    .advertisement-wrapper {
+        background: #fafafa;
+        margin-top: 80px;
+    }
+</style>
+
+
+<body>
+
+    <div class="advertisement-wrapper">
+        <div class="advertisement">
+            <img src="../img/psychology.png" class="psychology-img" />
+            <img src="../img/wellmune.png" class="wellmune-img" />
+            <img src="../img/kerry.png" class="kerry-img" />
+            <img src="../img/albion.png" class="albion-img" />
+            <img src="../img/traacs.png" class="traacs-img" />
+        </div>
+    </div>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery.matchHeight.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../slick/slick.min.js"></script>
+    <script type="text/javascript">
+
+        $(".advertisement").slick({
+            slidesToShow: 3,
+            infinite: true,
+            slidesToScroll: 1,
+            dots: true,
+            centerMode: true,
+            centerPadding: "50px",
+            focusOnSelect: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            appendDots: "#dot-container",
+            draggable: true,
+            initialSlide: 2,
+            variableWidth: true,
+        });
+    </script>
+
+
+</body>
+
+</html>

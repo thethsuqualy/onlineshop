@@ -334,30 +334,7 @@ Top Page
     /* max-width: 631px;
     height: 579px; */
     width: fit-content;
-
-
 }
-
-/* .red-dot-img {
-    background: url(../img/red_dot.png) no-repeat;
-    background-size: contain;
-    width: 105px;
-    height: 105px;
-    position: absolute;
-    z-index: 1000;
-    right: 27px;
-    top: 0;
-} */
-
-/* .about-img {
-    background: url(../img/reddot_img.png) no-repeat;
-    background-size: contain;
-    width: 581px;
-    height: 529px;
-    position: absolute;
-    bottom: 0;
-    right: 75px;
-} */
 
 /* 5th start */
 .product-section {
@@ -426,9 +403,14 @@ Top Page
 /* 6th start */
 
 .test-container {
-    max-width: 863px;
-    padding: 0 20px;
-    margin: 68px auto 138px auto;
+    overflow: hidden;
+    margin: 59px auto 80px auto;
+    background-color: rgb(168, 150, 150);
+}
+
+.test-wrapper .slick-track {
+    display: flex;
+    gap: 30px;
 }
 
 .test-h2 {
@@ -436,23 +418,26 @@ Top Page
     font-size: 55px;
     font-weight: 500;
     color: #A1613B;
-    margin: 66px 0 38px 0;
+    margin: 66px 0 133px 0;
     text-align: center;
 }
 
-.wrapper {
-    padding-top: 89px;
+.test-wrapper {
+    max-width: 1440px;
+    margin-bottom: 70px;
 }
 
 .test-absolute-container {
+    max-width: 823px;
     height: 200px;
     border-radius: 30px 10px 30px 10px;
-    box-shadow: 0px 10px 10px rgba(26, 25, 25, 0.1);
+    box-shadow: 0px 15px 30px #707070;
     position: relative;
-    padding: 30px 90px 35px 90px;
+    padding: 30px 80px 35px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .test-absolute-container::before {
@@ -474,7 +459,7 @@ Top Page
     color: #8C8C8C;
     position: relative;
     text-align: center;
-    padding: 25px 0 25px 55px;
+    padding: 25px 0 25px 75px;
 }
 
 .test-p::before {
@@ -502,65 +487,41 @@ Top Page
 
 /* 7th start */
 .company-section {
-    background-color: #FAFAFA;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
+    background-color: #7c7575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .companies {
     width: 100%;
     max-width: 1079px;
     padding: 0 20px;
-    display: flex;
     margin: 0 auto;
-    gap: 20px;
+    /* overflow: hidden; */
 }
 
-.companies .company{
-    width: 100%;
-    max-width: 300px;
-    background-color: red;
-}
-
-.companies .company-img img{
-    width: 100%;
-}
-
-.slick-track{
-    width: 100%;
+.companies .company {
     display: flex;
-    gap: 20px;
-}
-
-/* .slick-track .slick-slide{
-    width: 100%;
-    max-width: 300px;
-} */
-/* .psycho {
-    width: 150px;
+    align-items: center;
+    justify-content: center;
     height: 39px;
+    padding: 65px 0;
 }
 
-.wellmune {
-    width: 134px;
-    height: 25px;
-}
-
-.kerry {
-    width: 120px;
-    height: 120px;
-    margin-top: 25px;
-}
-
-.albion {
-    width: 140px;
-    height: 35px;
-}
-
-.traacs {
-    width: 146px;
-    height: 80px;
-    margin-top: 15px;
+/* .slick-track {
+    display: flex;
+    gap: 30px;
 } */
+.company-section .slick-track {
+    display: flex;
+    gap: 30px;
+}
+
+.companies.slick-slider {
+    margin: 0;
+}
 
 /* 8th start */
 
@@ -569,17 +530,8 @@ Top Page
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* display: flex;
-    justify-content: space-between; */
     margin: 0 auto;
-
 }
-
-/* .subscribe-img {
-    background: url(../img/subscribe_img.png) no-repeat;
-    background-size: contain;
-    max-width: 589px;
-} */
 
 .subscribe-content {
     margin: 144px 0;
@@ -634,6 +586,18 @@ Top Page
 }
 
 /* footer start */
+ 
+ .top-btn{
+    width: 97px;
+    height: 97px;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+
+ }
+ .top-btn.nottop {
+  display: none;
+}
 .footer-section {
     background: linear-gradient(to bottom, #fefefe 0%, #FFF2EA 100%, #FFF2EA 100%);
 
@@ -880,7 +844,7 @@ Top Page
 
 @media screen and (max-width: 1085px) {
     .footer {
-        padding: 120px 40px 70px 40px;
+        padding: 160px 40px 70px 40px;
     }
 
     .red-dot-img {
@@ -892,7 +856,7 @@ Top Page
     }
 
     .about-container {
-        margin: 40px 0 0 0;
+        margin: 40px 0;
     }
 
     .about-us {
@@ -919,7 +883,7 @@ Top Page
 
 @media screen and (max-width: 1000px) {
     .header {
-        position: fixed;
+        position:static;
         z-index: 1999;
         width: 100%;
         display: flex;
@@ -997,7 +961,7 @@ Top Page
     }
 
     .mv-container {
-        margin-top: 90px;
+        margin-top: 0px;
     }
 
     .hamburger.active .bar:nth-child(1) {
@@ -1013,11 +977,9 @@ Top Page
     }
 
     .footer {
-        padding: 60px 40px 70px 40px;
+        padding: 80px 40px 70px 40px;
     }
 }
-
-
 
 @media screen and (max-width: 970px) {
 
@@ -1044,7 +1006,7 @@ Top Page
     }
 
     .footer {
-        padding: 0px 40px 70px 40px;
+        padding: 80px 40px 70px 40px;
     }
 }
 
@@ -1058,9 +1020,9 @@ Top Page
 }
 
 @media screen and (max-width: 885px) {
-    .about-container {
+    /* .about-container {
         margin: 0;
-    }
+    } */
 
     .red-dot-img {
         right: 20px;
@@ -1181,7 +1143,7 @@ Top Page
         padding: 0 30px;
         display: flex;
         flex-direction: column;
-        margin: 0px auto;
+        margin: 40px auto;
     }
 
     .about-us {
@@ -1193,6 +1155,7 @@ Top Page
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 0;
     }
 
     .about-us-h2 {
@@ -1241,7 +1204,7 @@ Top Page
 
     .test-h2 {
         font-size: 40px;
-        margin: 26px 0 10px 0;
+        margin: 26px 0 103px 0;
     }
 
     .test-absolute-container {
@@ -1285,11 +1248,12 @@ Top Page
     }
 
     .subscribe-h2 {
+        padding-top: 10px;
         text-align: center;
     }
 
     .subscribe-content {
-        margin: 0px 0 50px 0;
+        margin: 10px 0 50px 0;
     }
 
     .email-btn {
