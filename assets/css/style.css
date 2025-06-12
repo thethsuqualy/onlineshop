@@ -1015,8 +1015,15 @@ Top Page
     }
 
     .test-absolute-container {
-        padding: 30px 60px 35px 100px;
+        width: 100%;
+        max-width: 600px;
+        height: 200px;
+        padding: 30px 50px 30px 90px;
         margin: 38px 30px 50px 30px;
+    }
+
+    .test-p::before {
+        left: 20px;
     }
 
     .footer {
@@ -1152,7 +1159,8 @@ Top Page
     .upper-content {
         margin-top: 28px;
     }
-    .dangila-container{
+
+    .dangila-container {
         margin: 40px auto 0 auto;
     }
 
@@ -1248,8 +1256,9 @@ Top Page
     }
 
     .test-absolute-container {
+        max-width: 550px;
         padding: 20px;
-        margin: 38px 30px 30px 30px;
+        margin: 38px auto 30px auto;
     }
 
     .test-absolute-container::before {
@@ -1346,6 +1355,7 @@ Top Page
     }
 
     .test-absolute-container {
+        max-width: 400px;
         padding: 10px;
     }
 
@@ -1365,6 +1375,7 @@ Top Page
     }
 
     .test-absolute-container {
+        max-width: 300px;
         padding: 5px;
 
     }
@@ -1387,7 +1398,8 @@ Top Page
         right: 0px;
         bottom: -10px;
     }
-    .company-section{
+
+    .company-section {
         margin-bottom: 35px;
     }
 }

@@ -30,38 +30,16 @@ $(function () {
     }
   });
 
-  // $(".test-wrapper").slick({
-  //   slidesToShow: 1,
-  //   infinite: true,
-  //   slidesToScroll: 1,
-  //   centerMode: false,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  // });
-
-  //  $('.companies').slick({
-  //           slidesToShow: 4,
-  //           infinite: true,
-  //           slidesToScroll: 1,
-  //           centerMode: true,
-  //           // centerpadding:"50px",
-  //           autoplay:true,
-  //           autoplaySpeed:2000,
-  //           // dots: true,
-  //           draggable: true,
-  //           // initialSlide: 2
-  //       });
   $(".test-wrapper").slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
-    variableWidth:true,
+    variableWidth: true,
     centerMode: true,
-    // centerPadding: "100px",
+    centerPadding: "100px",
     focusOnSelect: true,
     // prevArrow: ".prev-btn",
     // nextArrow: ".next-btn",
@@ -71,14 +49,16 @@ $(function () {
         settings: {
           slidesToShow: 1,
           centerMode: true,
-          centerPadding: "60px",
+          variableWidth: true,
+          centerPadding: "50px",
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          centerMode: false,
+          centerMode: true,
+          centerPadding: "0px",
         },
       },
     ],
