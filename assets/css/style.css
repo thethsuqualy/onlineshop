@@ -3,10 +3,6 @@
 /* ===============================
 Top Page
 =============================== */
-/* .main {
-    width: 100%;
-} */
-
 .header {
     background: #DDC0AE;
 }
@@ -45,7 +41,6 @@ Top Page
 }
 
 .menu-ul {
-    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     gap: 34px;
@@ -54,7 +49,8 @@ Top Page
     font-weight: 400;
     align-items: center;
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: space-between;
     gap: 40px;
@@ -89,7 +85,6 @@ Top Page
 
 .mv-container {
     background-color: #DDC0AE;
-
 }
 
 .mv-content {
@@ -159,15 +154,12 @@ Top Page
 }
 
 /* second start */
-
 .num-content-container {
     background-color: #FFF2EA;
     height: 213px;
     display: flex;
     align-items: center;
 }
-
-
 
 .num-content {
     width: 1018px;
@@ -201,7 +193,7 @@ Top Page
 .dangila-container {
     max-width: 1036px;
     padding: 20px;
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
 }
 
 .upper-content {
@@ -275,9 +267,9 @@ Top Page
 
 /* fourth start */
 .about-container {
-    max-width: 1280px;
+    max-width: 1260px;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 20px;
     display: flex;
     gap: 20px;
     margin: 80px auto;
@@ -405,7 +397,6 @@ Top Page
 }
 
 /* 6th start */
-
 .test-container {
     margin: 59px auto 80px auto;
     position: relative;
@@ -421,19 +412,16 @@ Top Page
     text-align: center;
 }
 
-/* Slick wrapper */
 .test-wrapper {
     max-width: 1440px;
     margin: 0 auto;
     position: relative;
 }
 
-/* Ensure slick works in horizontal row */
 .test-wrapper .slick-track {
     display: flex !important;
 }
 
-/* Each testimonial slide */
 .test-absolute-container {
     background-color: #fff;
     width: 100%;
@@ -447,11 +435,8 @@ Top Page
     align-items: center;
     justify-content: center;
     margin: 38px 30px 70px 30px;
-
 }
 
-
-/* Floating woman image */
 .test-absolute-container::before {
     content: '';
     background: url(../img/blue-women.png) no-repeat;
@@ -494,13 +479,34 @@ Top Page
     width: 53px;
     height: 35px;
     right: 0;
-    bottom: 0;
+    bottom: -10px;
+}
+
+.slick-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.sliderbtn {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    color: #494545;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 100vmax;
+    background-color: #e0d7d7;
+    border: none;
+    box-shadow: 0px 10px 10px #707070;
 }
 
 /* Slick dots (optional) */
-.test-wrapper .slick-dots {
+/* .test-wrapper .slick-dots {
     bottom: -30px;
-}
+} */
 
 .test-wrapper .slick-dots li button:before {
     color: #A1613B;
@@ -551,9 +557,7 @@ Top Page
     height: 80px;
 }
 
-
 /* 8th start */
-
 .subscribe {
     max-width: 1280px;
     padding: 0 20px;
@@ -622,7 +626,6 @@ Top Page
     position: fixed;
     right: 30px;
     bottom: 20px;
-
 }
 
 .top-btn.nottop {
@@ -631,7 +634,6 @@ Top Page
 
 .footer-section {
     background: linear-gradient(to bottom, #fefefe 0%, #FFF2EA 100%, #FFF2EA 100%);
-
 }
 
 .footer {
@@ -822,7 +824,6 @@ Top Page
     }
 }
 
-
 @media screen and (max-width: 1190px) {
     .mv-content-p {
         max-width: 400px;
@@ -922,12 +923,12 @@ Top Page
         padding: 30px 29px;
         top: 0;
     }
+
     /* .header-icon{
         position:absolute;
         left: 30px;
         top: 350px;
     } */
-    
 
     .hamburger {
         width: 30px;
@@ -1013,13 +1014,17 @@ Top Page
         transform: rotate(-45deg) translateY(-11px);
     }
 
+    .test-absolute-container {
+        padding: 30px 60px 35px 100px;
+        margin: 38px 30px 50px 30px;
+    }
+
     .footer {
         padding: 80px 40px 70px 40px;
     }
 }
 
 @media screen and (max-width: 970px) {
-
     .subscribe-h2 {
         font-size: 30px;
     }
@@ -1057,10 +1062,6 @@ Top Page
 }
 
 @media screen and (max-width: 885px) {
-    /* .about-container {
-        margin: 0;
-    } */
-
     .red-dot-img {
         right: 20px;
         top: 63px;
@@ -1119,7 +1120,6 @@ Top Page
         margin-left: 0;
         padding: 30px;
         margin-top: 50px;
-
     }
 
     .mv-content-h1 {
@@ -1151,6 +1151,9 @@ Top Page
 
     .upper-content {
         margin-top: 28px;
+    }
+    .dangila-container{
+        margin: 40px auto 0 auto;
     }
 
     .dangila-h2 {
@@ -1241,11 +1244,12 @@ Top Page
 
     .test-h2 {
         font-size: 40px;
-        margin: 0px 0 47px 0;
+        margin: 33px 0 47px 0;
     }
 
     .test-absolute-container {
         padding: 20px;
+        margin: 38px 30px 30px 30px;
     }
 
     .test-absolute-container::before {
@@ -1282,6 +1286,8 @@ Top Page
         display: flex;
         flex-direction: column-reverse;
         margin: 0 auto 40px auto;
+        align-items: center;
+        justify-content: center;
     }
 
     .subscribe-p {
@@ -1296,6 +1302,13 @@ Top Page
 
     .subscribe-content {
         margin: 10px 0 50px 0;
+    }
+
+    .subscribe-img.sp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 
     .email-btn {
@@ -1331,11 +1344,13 @@ Top Page
         right: 0px;
         bottom: -23px;
     }
-    .test-absolute-container{
+
+    .test-absolute-container {
         padding: 10px;
     }
-    .test-p{
-        padding:10px 0 10px 20px;
+
+    .test-p {
+        padding: 10px 0 10px 20px;
         font-size: 14px;
     }
 }
@@ -1362,7 +1377,7 @@ Top Page
     .test-p::before {
         width: 23px;
         height: 25px;
-        top: -8px;
+        top: -12px;
         left: 0px;
     }
 
@@ -1371,6 +1386,9 @@ Top Page
         height: 25px;
         right: 0px;
         bottom: -10px;
+    }
+    .company-section{
+        margin-bottom: 35px;
     }
 }
 
@@ -1386,4 +1404,25 @@ Top Page
     .get-btn {
         font-size: 14px;
     }
+}
+
+@media screen and (max-width: 350px) {
+    .test-p::before {
+        width: 20px;
+        height: 20px;
+        top: -6px;
+        left: 0px;
+    }
+
+    .test-p::after {
+        width: 20px;
+        height: 20;
+        right: 0px;
+        bottom: -21px;
+    }
+
+    .sliderbtn {
+        width: 80px;
+    }
+
 }

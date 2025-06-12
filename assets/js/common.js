@@ -57,22 +57,33 @@ $(function () {
     slidesToScroll: 1,
     arrows: false,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
-    centerMode:true,    
-     responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                centerMode:false,
-            }
+    centerMode: true,
+    centerPadding: "100px",
+    focusOnSelect: true,
+    // prevArrow: ".prev-btn",
+    // nextArrow: ".next-btn",
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "60px",
         },
-        
-    ]
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+    ],
   });
 
-$('.companies').slick({
+  $(".companies").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -81,20 +92,18 @@ $('.companies').slick({
     dots: false,
     infinite: true,
     responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3
-            }
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
         },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2
-            }
-        }
-    ]
-});
-
-  
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
 });
