@@ -73,14 +73,15 @@ $(function () {
     dots: false,
     infinite: true,
     responsive: [
+      
       {
-        breakpoint: 1024,
+        breakpoint: 768,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 500,
         settings: {
           slidesToShow: 2,
         },
