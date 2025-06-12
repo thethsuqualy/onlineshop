@@ -35,7 +35,7 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     variableWidth: true,
     centerMode: true,
