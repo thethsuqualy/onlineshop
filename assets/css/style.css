@@ -627,9 +627,7 @@ Top Page
     right: 30px;
     bottom: 20px;
 }
-.top-btn img{
-    border-radius: 50%;
-}
+
 
 .top-btn.nottop {
     display: none;
