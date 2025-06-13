@@ -186,6 +186,7 @@ Top Page
     font-weight: 400;
     text-align: center;
     color: #181818;
+    margin-top: 11px;
 }
 
 /* third start */
@@ -242,11 +243,15 @@ Top Page
 .dangila-img.side-effect {
     background: url(../img/syringe.png) no-repeat;
     background-size: contain;
+    width: 70px;
+    height: 70px;
 }
 
 .dangila-img.organic {
     background: url(../img/organic.png) no-repeat;
     background-size: contain;
+    width: 58px;
+    height: 70px;
 }
 
 .dangila-img-label {
@@ -279,7 +284,7 @@ Top Page
 }
 
 .about-us {
-    max-width: 500px;
+    max-width: 550px;
     margin: 110px 0 65px 0;
     z-index: 1000;
 }
@@ -287,7 +292,7 @@ Top Page
 .about-us-h2 {
     font-family: 'Roboto';
     font-size: 55px;
-    font-weight: 400;
+    font-weight: 500;
     color: #A1613B;
 }
 
@@ -522,7 +527,7 @@ Top Page
 
 .companies {
     max-width: 1079px;
-    padding: 10px 20px;
+    padding: 0px 20px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -543,7 +548,17 @@ Top Page
 .company img {
     object-fit: contain;
     display: block;
-    width: 120px;
+    width: 150px;
+    height: 39px;
+}
+
+.company img.wellmune {
+    width: 134px;
+    height: 25px;
+}
+
+.company img.albion {
+    width: 140px;
     height: 35px;
 }
 
@@ -567,6 +582,8 @@ Top Page
 }
 
 .subscribe-content {
+    max-width: 550px;
+    width: 100%;
     margin: 144px 0;
 }
 
@@ -655,6 +672,10 @@ Top Page
     width: 260px;
 }
 
+.footer-content.first-content {
+    padding-bottom: 22px;
+}
+
 .first-content-icon {
     display: flex;
     gap: 10px;
@@ -715,6 +736,10 @@ Top Page
     background-size: contain;
     width: 24px;
     height: 24px;
+}
+
+.mail-label {
+    color: #A1613B;
 }
 
 .third {
@@ -1050,11 +1075,6 @@ Top Page
         font-size: 14px;
     }
 
-    .get-btn {
-        width: 120px;
-        height: 40px;
-    }
-
     .footer {
         padding: 80px 40px 70px 40px;
     }
@@ -1099,6 +1119,14 @@ Top Page
     .about-us-p {
         font-size: 14px;
         margin: 5px 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .subscribe-content {
+        max-width: 550px;
+        width: 100%;
+        margin: 140px 0;
     }
 }
 
@@ -1224,6 +1252,11 @@ Top Page
         justify-items: center;
         gap: 20px;
     }
+    .product.oil{
+        display: flex;
+        grid-column: 1 / -1;
+
+    }
 
     .product {
         display: flex;
@@ -1311,6 +1344,7 @@ Top Page
     }
 
     .subscribe-content {
+
         margin: 10px 0 50px 0;
     }
 
@@ -1327,6 +1361,7 @@ Top Page
 
     .get-btn {
         font-size: 16px;
+        width: 130px;
     }
 
     .top-btn {
@@ -1416,6 +1451,7 @@ Top Page
 
     .get-btn {
         font-size: 14px;
+        width: 120px;
     }
 }
 
